@@ -4,7 +4,8 @@
     "build": "next build",
     "dev": "next dev --turbopack",
     "start": "next start",
-    "seed": "ts-node -r dotenv/config ./scripts/route.ts"
+    "seed": "ts-node -r dotenv/config ./scripts/route.ts",
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -30,6 +31,8 @@
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.3",
     "ts-node": "^10.9.2"
   }
 }
