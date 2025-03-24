@@ -6,6 +6,8 @@ import { neon } from "@neondatabase/serverless";
 const sql = neon(`${process.env.DATABASE_URL}`);
 
 async function seedUsers() {
+  console.log("sql");
+  console.log(sql);
   await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
   await sql`
     CREATE TABLE IF NOT EXISTS users (
